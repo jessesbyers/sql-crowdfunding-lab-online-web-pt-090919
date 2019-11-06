@@ -2,7 +2,7 @@ def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_
   "SELECT projects.title, pledges.amount
   FROM projects
   JOIN pledges
-  ON projects.id = pledges.user_id
+  ON projects.id = pledges.project_id
   GROUP BY projects.title
   "
   #
